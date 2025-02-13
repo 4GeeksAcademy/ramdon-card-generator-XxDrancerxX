@@ -1,34 +1,55 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
+body {
     background: green;
 }
+
 .card {
-    background-color: aliceblue;
-    height: 500px;
-    margin-top: 25px;
-    margin-bottom: 80px;
-    margin-left: 550px;
-    margin-right: 550px;
-}
-.icon {
-    height: 25%;
     display: flex;
-    font-size: 100px;
-    flex-direction: row;
-    align-items: flex-end;
+    width: 300px;
+    height: 600px;
+    background-color: aliceblue;
+    margin: 25px auto;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 }
+
+
 .number {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    align-items: stretch;
     justify-content: center;
+    font-size: 200px;
     height: 50%;
-    flex-grow: 1; 
-    font-size: 200px; 
-    font-weight: bold; 
 }
-.icon2 {
+
+.icon {
+    font-size: 150px;
     height: 25%;
     display: flex;
+    flex-direction: column-reverse;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.icon2 {
+    display: flex;
+    font-size: 150px;
+    height: 25%;
+    transform: rotate(180deg);
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#generateCard{
+    border-radius: 20px;
+    background-color: aqua;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
 }
